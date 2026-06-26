@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIX - Luxo Premium</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Georgia,serif;
+background:linear-gradient(180deg,#ffffff,#f8f4e8);
+color:#222;
+overflow-x:hidden;
+}
+header{
+text-align:center;
+padding:90px 20px;
+background:linear-gradient(135deg,#fff,#f4e7b0);
+}
+header h1{
+font-size:72px;
+color:#c9a227;
+letter-spacing:6px;
+animation:fadeDown 1s ease;
+}
+header p{font-size:22px;color:#555;margin-top:10px}
+
+.pacotes{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+padding:60px;
+}
+
+.card{
+background:white;
+border:1px solid #e8d28a;
+border-radius:20px;
+padding:35px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.4s;
+position:relative;
+overflow:hidden;
+}
+
+.card::before{
+content:'';
+position:absolute;
+top:-100%;
+left:-100%;
+width:200%;
+height:200%;
+background:linear-gradient(45deg,transparent,rgba(201,162,39,.15),transparent);
+transform:rotate(25deg);
+transition:.8s;
+}
+
+.card:hover::before{
+top:100%;
+left:100%;
+}
+
+.card:hover{
+transform:translateY(-12px) scale(1.03);
+box-shadow:0 20px 50px rgba(201,162,39,.35);
+}
+
+.card h2{color:#c9a227}
+.preco{font-size:34px;font-weight:bold;margin:20px 0}
+
+.btn{
+display:inline-block;
+background:#c9a227;
+color:white;
+text-decoration:none;
+padding:14px 30px;
+border-radius:50px;
+font-weight:bold;
+transition:.2s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+.btn:active{
+transform:scale(.92);
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#777;
+}
+
+@keyframes fadeDown{
+from{opacity:0;transform:translateY(-30px)}
+to{opacity:1;transform:translateY(0)}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>AIX</h1>
+<p>Excelência em Marketing Digital e Design Premium</p>
+</header>
+
+<section class="pacotes">
+<div class="card"><h2>Pacote Básico</h2><div class="preco">5.000 KZS</div><a class="btn" href="https://wa.me/244954334416?text=Olá,%20quero%20comprar%20o%20Pacote%20Básico">Comprar Serviço</a></div>
+<div class="card"><h2>Pacote Profissional</h2><div class="preco">15.000 KZS</div><a class="btn" href="https://wa.me/244954334416?text=Olá,%20quero%20comprar%20o%20Pacote%20Profissional">Comprar Serviço</a></div>
+<div class="card"><h2>Pacote Boss</h2><div class="preco">20.000 KZS</div><a class="btn" href="https://wa.me/244954334416?text=Olá,%20quero%20comprar%20o%20Pacote%20Boss">Comprar Serviço</a></div>
+<div class="card"><h2>Pacote Mega</h2><div class="preco">30.000 KZS</div><a class="btn" href="https://wa.me/244954334416?text=Olá,%20quero%20comprar%20o%20Pacote%20Mega">Comprar Serviço</a></div>
+<div class="card"><h2>Pacote Premium</h2><div class="preco">39.000 KZS</div><a class="btn" href="https://wa.me/244954334416?text=Olá,%20quero%20comprar%20o%20Pacote%20Premium">Comprar Serviço</a></div>
+</section>
+
+<footer>© 2026 AIX</footer>
+
+</body>
+</html>
